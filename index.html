@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Stream</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class='container-fluid'>
+		<div class='row'>
+		<div class='col-md-2'></div>
+		<div class='col-md-8'>
+			<h1>Pizza Stream</h1>
+			<form>
+				<div class='row'>
+					<div class='form-group'>
+						<label for='size'>Size</label>
+						<input type="radio" name='size' value='small'>Small
+						<input type="radio" name='size' value='medium'>Medium
+						<input type="radio" name='size' value='large'>Large
+					</div>
+					<div class='form-group'>
+						<label for='crust'>Crust</label>
+						<input type="radio" name='crust' value='white'>White
+						<input type="radio" name='crust' value='wheat'>Wheat
+						<input type="radio" name='crust' value='glutenfree'>Gluten-free
+					</div>
+					<div class='form-group'>
+						<label for='sauce'>Sauce</label>
+						<input type="radio" name='sauce' value='tomato'>Robust Tomato
+						<input type="radio" name='sauce' value='bbq'>Spicy BBQ
+						<input type="radio" name='sauce' value='cream'>Creamy Cream (+$1.50)
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-md-4'>
+						<div class='form-group'>
+							<label for='toppings'>Toppings ($0.75 each)</label><br>
+							<select multiple size='17' name='toppings'>
+								<optgroup label='Meat'>
+									<option value='sausage'>Sausage</option>
+									<option value='pepperoni'>Pepperoni</option>
+									<option value='bacon'>Bacon (+$0.50 extra)</option>
+									<option value='salami'>Salami</option>
+									<option value='ham'>Ham</option>
+									<option value='chicken'>Chicken (+$0.50 extra)</option>
+								</optgroup>
+								<optgroup label='Cheese'>
+									<option value='feta'>Feta Cheese</option>
+									<option value='soycheese'>Soy Cheese</option>
+									<option value='bananapeppers'>Banana Peppers</option>
+									<option value='japalenos'>Jalapeno Peppers</option>
+								</optgroup>
+								<optgroup label="Veggies">
+									<option value='onion'>Onion</option>
+									<option value='olives'>Olives</option>
+									<option value='pienapple'>Pineapple</option>
+									<option value='mushrooms'>Mushrooms</option>
+								</optgroup>
+							</select>
+						</div>
+						<div class='form-group'>
+							<label>Other options</label><br>
+							<input type='checkbox' name='extracheese' value='extracheese'>Extra Cheese (+$1.00)<br>
+							<input type='checkbox' name='breadsticks' value='breadsticks'>Breadsticks (+$5.00)<br>
+						</div>
+					</div>
+					<div class='col-md-4'>
+						<div class='form-group'>
+							<label>Order details</label><br>
+							Name<input type="text" name='name'><br>
+							Phone<input type="tel" name='phone'><br>
+							Email<input type="email" name='email'><br>
+							<input type='radio' name='delivery' value='pickup'>Pickup
+							<input type='radio' name='delivery' value='deliver'>Deliver
+						</div>
+						<div class='form-group'>
+							<label>Delivery address</label>
+							<br>
+							Street<input type="text" placeholder='350 Laguna Street'><br>
+							City<br><input type="text" placeholder='San Francisco'><br>
+							State<select name="state" size="1">
+								<option value="AK">AK</option>
+								<option value="AL">AL</option>
+								<option value="AR">AR</option>
+								<option value="AZ">AZ</option>
+								<option value="CA" selected="selected">CA</option>
+								<option value="CO">CO</option>
+								<option value="CT">CT</option>
+								<option value="DC">DC</option>
+								<option value="DE">DE</option>
+								<option value="FL">FL</option>
+								<option value="GA">GA</option>
+								<option value="HI">HI</option>
+								<option value="ID">ID</option>
+								<option value="IL">IL</option>
+								<option value="IN">IN</option>
+								<option value="KS">KS</option>
+								<option value="KY">KY</option>
+								<option value="LA">LA</option>
+								<option value="MA">MA</option>
+								<option value="MD">MD</option>
+								<option value="ME">ME</option>
+								<option value="MI">MI</option>
+								<option value="MN">MN</option>
+								<option value="MO">MO</option>
+								<option value="MS">MS</option>
+								<option value="MT">MT</option>
+								<option value="NC">NC</option>
+								<option value="ND">ND</option>
+								<option value="NE">NE</option>
+								<option value="NH">NH</option>
+								<option value="NJ">NJ</option>
+								<option value="NM">NM</option>
+								<option value="NV">NV</option>
+								<option value="NY">NY</option>
+								<option value="OH">OH</option>
+								<option value="OK">OK</option>
+								<option value="OR">OR</option>
+								<option value="PA">PA</option>
+								<option value="RI">RI</option>
+								<option value="SC">SC</option>
+								<option value="SD">SD</option>
+								<option value="TN">TN</option>
+								<option value="TX">TX</option>
+								<option value="UT">UT</option>
+								<option value="VA">VA</option>
+								<option value="VT">VT</option>
+								<option value="WA">WA</option>
+								<option value="WI">WI</option>
+								<option value="WV">WV</option>
+								<option value="WY">WY</option></select><br>
+							Zip<br><input type="text" placeholder='94102'><br>
+						</div>
+						<div class='form-group'>
+					</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
