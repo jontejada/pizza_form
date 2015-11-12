@@ -37,6 +37,18 @@ $(document).ready(function(){
 			}
 		if ($('#del')[0].checked) {
 			subtotal += 5;
+			$('.delpopup').css('display','block');
+			$('#address')[0].required = true;
+			$('#city')[0].required = true;
+			$('#state')[0].required = true;
+			$('#note')[0].required = true;
+		}
+		if (!$('#del')[0].checked) {
+			$('.delpopup').css('display','none');
+			$('#address')[0].required = false;
+			$('#city')[0].required = false;
+			$('#state')[0].required = false;
+			$('#note')[0].required = false;
 		}
 		//console.log('ran change! '+subtotal);
 		$('#sub').text(subtotal.toFixed(2));
@@ -46,8 +58,6 @@ $(document).ready(function(){
 
 	}
 });
-
-
 
 $( "select" ).change(function () {
     var str = "";

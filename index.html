@@ -13,17 +13,17 @@
 		Tip = $<span id='tip'></span><br>
 		Total = $<span id='total'></span><br>
 	</div>
-	<form>
+	<form id='zaform'>
 		SIZE
-		<label><input name='size' type='radio' value='small' id='sm'>Small $10</label>
+		<label><input name='size' type='radio' value='small' id='sm' required>Small $10</label>
 		<label><input name='size' type='radio' value='medium' id='md'>Medium $16</label>
 		<label><input name='size' type='radio' value='large' id='lg'>Large $24</label>
 		CRUST
-		<label><input name='crust' type='radio' value='white'>White</label>
+		<label><input name='crust' type='radio' value='white' required>White</label>
 		<label><input name='crust' type='radio' value='wheat'>Wheat</label>
 		<label><input name='crust' type='radio' value='glutenfree'>Gluten Free</label>
 		SAUCE
-		<label><input name='sauce' type='radio' value='tomato'>Robust Tomato</label>
+		<label><input name='sauce' type='radio' value='tomato' required>Robust Tomato</label>
 		<label><input name='sauce' type='radio' value='bbq'>Spicy BBQ</label>
 		<label><input name='sauce' type='radio' value='cream' id='cc'>Creamy Cream (+$1.50)</label>
 		<label>SELECT
@@ -49,12 +49,24 @@
 				</optgroup>
 			</select>
 		</label>
-		OTHER OPTIONS
+		<br>OTHER OPTIONS
 		<label><input type='checkbox' name='extracheese' id='ec'>Extra Cheese (+$1)</label>
 		<label><input type='checkbox' name='breadsticks' id='bs'>Breadsticks (+$5)</label>
-		<label><input name='pord' type='radio' value='pickup'>Pickup</label>
+		<label><input name='pord' type='radio' value='pickup' required>Pickup</label>
 		<label><input name='pord' type='radio' value='delivery' id='del'>Delivery (+$5)</label>
+		<br>YOUR INFO
+		<label>Name <input name='name' type='text' placeholder='Jane Smith' required></label>
+		<label>Phone <input name='tel' type='tel' placeholder='480-555-1555' required></label>
+		<label>Email <input name='email' type='email' placeholder='jsmith@gmail.com' required></label>
+		<br>
 		<input type='submit'>
 	</form>
+	<div class='delpopup'>
+	Delivery details
+	<label>Address <input for='zaform' type='text' name='address' placeholder='1122 Oak St' id='address'></label>
+	<label>City <input for='zaform' type='text' name='city' placeholder='San Francisco' id='city'></label>
+	<label>State <input for='zaform' type='text' name='state' placeholder='CA' id='state'></label>
+	<label>Note <textarea for='zaform' name='note' id='note'></textarea>
+	</div>
 </body>
 </html>

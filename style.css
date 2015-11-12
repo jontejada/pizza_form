@@ -11,3 +11,12 @@
 label {
 	display:block;
 }
+
+.delpopup {
+	border:3px solid black;
+	display:none;
+	position:fixed;
+	left: 250px;
+	top:40px;
+	padding:10px;
+}
